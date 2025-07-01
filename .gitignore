@@ -10,7 +10,7 @@ HELP.md
 .settings
 .springBeans
 .sts4-cache
-
+.mysql-*
 
 # Created by https://www.gitignore.io/api/git,java,maven,eclipse,windows
 
