@@ -26,6 +26,9 @@ public class Todo {
     this.prioridade = prioridade;
   }
 
+  public Todo() {
+  }
+
   public String getNome() {
     return nome;
   }
