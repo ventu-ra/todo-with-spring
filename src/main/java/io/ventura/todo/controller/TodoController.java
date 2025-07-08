@@ -10,6 +10,7 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @RestController
 @RequestMapping("/api/todos")
@@ -24,8 +25,12 @@ public class TodoController {
   @PostMapping
   public List<Todo> create(@RequestBody Todo todo) {
     // TODO: process POST request
-
     return todoService.create(todo);
+  }
+
+  @GetMapping
+  public List<Todo> list() {
+    return todoService.list();
   }
 
 }
